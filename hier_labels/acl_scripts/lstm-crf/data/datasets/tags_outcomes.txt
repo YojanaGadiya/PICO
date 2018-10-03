@@ -1,0 +1,7 @@
+None
+Adverse
+Pain
+Mental
+Mortality
+Physical
+Other
