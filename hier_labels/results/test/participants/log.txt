@@ -1,0 +1,224 @@
+2018-09-30 11:46:10,146:INFO: WARNING: randomly initializing word vectors
+2018-09-30 11:46:12,845:WARNING: From /home/andrew/.conda/envs/my_python/lib/python3.6/site-packages/tensorflow/python/ops/rnn.py:430: calling reverse_sequence (from tensorflow.python.ops.array_ops) with seq_dim is deprecated and will be removed in a future version.
+Instructions for updating:
+seq_dim is deprecated, use seq_axis instead
+2018-09-30 11:46:12,846:WARNING: From /home/andrew/.conda/envs/my_python/lib/python3.6/site-packages/tensorflow/python/util/deprecation.py:454: calling reverse_sequence (from tensorflow.python.ops.array_ops) with batch_dim is deprecated and will be removed in a future version.
+Instructions for updating:
+batch_dim is deprecated, use batch_axis instead
+2018-09-30 11:46:15,554:INFO: Initializing tf session
+2018-09-30 11:46:16,483:INFO: Epoch 1 out of 1
+2018-09-30 11:49:57,894:INFO: WARNING: randomly initializing word vectors
+2018-09-30 11:50:00,430:WARNING: From /home/andrew/.conda/envs/my_python/lib/python3.6/site-packages/tensorflow/python/ops/rnn.py:430: calling reverse_sequence (from tensorflow.python.ops.array_ops) with seq_dim is deprecated and will be removed in a future version.
+Instructions for updating:
+seq_dim is deprecated, use seq_axis instead
+2018-09-30 11:50:00,432:WARNING: From /home/andrew/.conda/envs/my_python/lib/python3.6/site-packages/tensorflow/python/util/deprecation.py:454: calling reverse_sequence (from tensorflow.python.ops.array_ops) with batch_dim is deprecated and will be removed in a future version.
+Instructions for updating:
+batch_dim is deprecated, use batch_axis instead
+2018-09-30 11:50:02,933:INFO: Initializing tf session
+2018-09-30 11:50:03,833:INFO: Epoch 1 out of 1
+2018-09-30 11:54:34,151:INFO: WARNING: randomly initializing word vectors
+2018-09-30 11:54:36,638:WARNING: From /home/andrew/.conda/envs/my_python/lib/python3.6/site-packages/tensorflow/python/ops/rnn.py:430: calling reverse_sequence (from tensorflow.python.ops.array_ops) with seq_dim is deprecated and will be removed in a future version.
+Instructions for updating:
+seq_dim is deprecated, use seq_axis instead
+2018-09-30 11:54:36,639:WARNING: From /home/andrew/.conda/envs/my_python/lib/python3.6/site-packages/tensorflow/python/util/deprecation.py:454: calling reverse_sequence (from tensorflow.python.ops.array_ops) with batch_dim is deprecated and will be removed in a future version.
+Instructions for updating:
+batch_dim is deprecated, use batch_axis instead
+2018-09-30 11:54:39,298:INFO: Initializing tf session
+2018-09-30 11:54:39,650:INFO: Reloading the latest trained model...
+2018-09-30 11:58:43,369:INFO: WARNING: randomly initializing word vectors
+2018-09-30 11:58:45,963:WARNING: From /home/andrew/.conda/envs/my_python/lib/python3.6/site-packages/tensorflow/python/ops/rnn.py:430: calling reverse_sequence (from tensorflow.python.ops.array_ops) with seq_dim is deprecated and will be removed in a future version.
+Instructions for updating:
+seq_dim is deprecated, use seq_axis instead
+2018-09-30 11:58:45,964:WARNING: From /home/andrew/.conda/envs/my_python/lib/python3.6/site-packages/tensorflow/python/util/deprecation.py:454: calling reverse_sequence (from tensorflow.python.ops.array_ops) with batch_dim is deprecated and will be removed in a future version.
+Instructions for updating:
+batch_dim is deprecated, use batch_axis instead
+2018-09-30 11:58:48,642:INFO: Initializing tf session
+2018-09-30 11:58:49,563:INFO: Epoch 1 out of 1
+2018-09-30 12:02:20,567:INFO: f1 0.25 - p 0.31 - r 0.24
+2018-09-30 12:02:20,945:INFO: - new best score!
+2018-09-30 13:19:45,131:INFO: WARNING: randomly initializing word vectors
+2018-09-30 13:19:47,952:WARNING: From /home/andrew/.conda/envs/my_python/lib/python3.6/site-packages/tensorflow/python/ops/rnn.py:430: calling reverse_sequence (from tensorflow.python.ops.array_ops) with seq_dim is deprecated and will be removed in a future version.
+Instructions for updating:
+seq_dim is deprecated, use seq_axis instead
+2018-09-30 13:19:47,953:WARNING: From /home/andrew/.conda/envs/my_python/lib/python3.6/site-packages/tensorflow/python/util/deprecation.py:454: calling reverse_sequence (from tensorflow.python.ops.array_ops) with batch_dim is deprecated and will be removed in a future version.
+Instructions for updating:
+batch_dim is deprecated, use batch_axis instead
+2018-09-30 13:19:50,648:INFO: Initializing tf session
+2018-09-30 13:19:51,593:INFO: Epoch 1 out of 1
+2018-09-30 13:23:14,632:INFO: f1 0.28 - p 0.38 - r 0.26
+2018-09-30 13:23:15,156:INFO: - new best score!
+2018-09-30 13:23:39,566:INFO: WARNING: randomly initializing word vectors
+2018-09-30 13:23:42,135:WARNING: From /home/andrew/.conda/envs/my_python/lib/python3.6/site-packages/tensorflow/python/ops/rnn.py:430: calling reverse_sequence (from tensorflow.python.ops.array_ops) with seq_dim is deprecated and will be removed in a future version.
+Instructions for updating:
+seq_dim is deprecated, use seq_axis instead
+2018-09-30 13:23:42,136:WARNING: From /home/andrew/.conda/envs/my_python/lib/python3.6/site-packages/tensorflow/python/util/deprecation.py:454: calling reverse_sequence (from tensorflow.python.ops.array_ops) with batch_dim is deprecated and will be removed in a future version.
+Instructions for updating:
+batch_dim is deprecated, use batch_axis instead
+2018-09-30 13:23:44,814:INFO: Initializing tf session
+2018-09-30 13:23:45,158:INFO: Reloading the latest trained model...
+2018-09-30 13:23:45,159:INFO: Restoring parameters from /home/andrew/Desktop/EBM-NLP-HIER/acl_scripts/lstm-crf/results/test/participants/model.weights/
+2018-09-30 13:23:45,251:INFO: Testing model over test set
+2018-09-30 13:23:52,370:INFO: f1 0.29 - p 0.44 - r 0.27
+2018-09-30 13:24:54,842:INFO: WARNING: randomly initializing word vectors
+2018-09-30 13:24:57,395:WARNING: From /home/andrew/.conda/envs/my_python/lib/python3.6/site-packages/tensorflow/python/ops/rnn.py:430: calling reverse_sequence (from tensorflow.python.ops.array_ops) with seq_dim is deprecated and will be removed in a future version.
+Instructions for updating:
+seq_dim is deprecated, use seq_axis instead
+2018-09-30 13:24:57,396:WARNING: From /home/andrew/.conda/envs/my_python/lib/python3.6/site-packages/tensorflow/python/util/deprecation.py:454: calling reverse_sequence (from tensorflow.python.ops.array_ops) with batch_dim is deprecated and will be removed in a future version.
+Instructions for updating:
+batch_dim is deprecated, use batch_axis instead
+2018-09-30 13:25:00,082:INFO: Initializing tf session
+2018-09-30 13:25:01,026:INFO: Epoch 1 out of 3
+2018-09-30 13:28:31,844:INFO: f1 0.26 - p 0.39 - r 0.25
+2018-09-30 13:28:32,288:INFO: - new best score!
+2018-09-30 13:28:32,288:INFO: Epoch 2 out of 3
+2018-09-30 13:32:01,094:INFO: f1 0.38 - p 0.56 - r 0.35
+2018-09-30 13:32:01,506:INFO: - new best score!
+2018-09-30 13:32:01,506:INFO: Epoch 3 out of 3
+2018-09-30 13:35:31,069:INFO: f1 0.44 - p 0.56 - r 0.40
+2018-09-30 13:35:31,481:INFO: - new best score!
+2018-09-30 13:35:41,500:INFO: WARNING: randomly initializing word vectors
+2018-09-30 13:35:44,291:WARNING: From /home/andrew/.conda/envs/my_python/lib/python3.6/site-packages/tensorflow/python/ops/rnn.py:430: calling reverse_sequence (from tensorflow.python.ops.array_ops) with seq_dim is deprecated and will be removed in a future version.
+Instructions for updating:
+seq_dim is deprecated, use seq_axis instead
+2018-09-30 13:35:44,292:WARNING: From /home/andrew/.conda/envs/my_python/lib/python3.6/site-packages/tensorflow/python/util/deprecation.py:454: calling reverse_sequence (from tensorflow.python.ops.array_ops) with batch_dim is deprecated and will be removed in a future version.
+Instructions for updating:
+batch_dim is deprecated, use batch_axis instead
+2018-09-30 13:35:46,956:INFO: Initializing tf session
+2018-09-30 13:35:47,291:INFO: Reloading the latest trained model...
+2018-09-30 13:35:47,292:INFO: Restoring parameters from /home/andrew/Desktop/EBM-NLP-HIER/acl_scripts/lstm-crf/results/test/participants/model.weights/
+2018-09-30 13:35:47,387:INFO: Testing model over test set
+2018-09-30 13:35:54,536:INFO: f1 0.46 - p 0.73 - r 0.40
+2018-09-30 14:02:54,905:INFO: WARNING: randomly initializing word vectors
+2018-09-30 14:03:05,286:WARNING: From /home/andrew/.conda/envs/my_python/lib/python3.6/site-packages/tensorflow/python/ops/rnn.py:430: calling reverse_sequence (from tensorflow.python.ops.array_ops) with seq_dim is deprecated and will be removed in a future version.
+Instructions for updating:
+seq_dim is deprecated, use seq_axis instead
+2018-09-30 14:03:05,287:WARNING: From /home/andrew/.conda/envs/my_python/lib/python3.6/site-packages/tensorflow/python/util/deprecation.py:454: calling reverse_sequence (from tensorflow.python.ops.array_ops) with batch_dim is deprecated and will be removed in a future version.
+Instructions for updating:
+batch_dim is deprecated, use batch_axis instead
+2018-09-30 14:03:07,829:INFO: Initializing tf session
+2018-09-30 14:03:08,787:INFO: Epoch 1 out of 15
+2018-09-30 14:04:44,682:INFO: WARNING: randomly initializing word vectors
+2018-09-30 14:04:47,373:WARNING: From /home/andrew/.conda/envs/my_python/lib/python3.6/site-packages/tensorflow/python/ops/rnn.py:430: calling reverse_sequence (from tensorflow.python.ops.array_ops) with seq_dim is deprecated and will be removed in a future version.
+Instructions for updating:
+seq_dim is deprecated, use seq_axis instead
+2018-09-30 14:04:47,373:WARNING: From /home/andrew/.conda/envs/my_python/lib/python3.6/site-packages/tensorflow/python/util/deprecation.py:454: calling reverse_sequence (from tensorflow.python.ops.array_ops) with batch_dim is deprecated and will be removed in a future version.
+Instructions for updating:
+batch_dim is deprecated, use batch_axis instead
+2018-09-30 14:04:49,875:INFO: Initializing tf session
+2018-09-30 14:04:50,769:INFO: Epoch 1 out of 15
+2018-09-30 14:05:07,669:INFO: WARNING: randomly initializing word vectors
+2018-09-30 14:05:10,401:WARNING: From /home/andrew/.conda/envs/my_python/lib/python3.6/site-packages/tensorflow/python/ops/rnn.py:430: calling reverse_sequence (from tensorflow.python.ops.array_ops) with seq_dim is deprecated and will be removed in a future version.
+Instructions for updating:
+seq_dim is deprecated, use seq_axis instead
+2018-09-30 14:05:10,402:WARNING: From /home/andrew/.conda/envs/my_python/lib/python3.6/site-packages/tensorflow/python/util/deprecation.py:454: calling reverse_sequence (from tensorflow.python.ops.array_ops) with batch_dim is deprecated and will be removed in a future version.
+Instructions for updating:
+batch_dim is deprecated, use batch_axis instead
+2018-09-30 14:05:13,520:INFO: Initializing tf session
+2018-09-30 14:05:14,707:INFO: Epoch 1 out of 15
+2018-09-30 14:08:38,643:INFO: f1 0.30 - p 0.52 - r 0.28
+2018-09-30 14:08:39,307:INFO: - new best score!
+2018-09-30 14:08:39,307:INFO: Epoch 2 out of 15
+2018-09-30 14:12:16,197:INFO: f1 0.37 - p 0.49 - r 0.35
+2018-09-30 14:12:16,641:INFO: - new best score!
+2018-09-30 14:12:16,641:INFO: Epoch 3 out of 15
+2018-09-30 14:15:54,979:INFO: f1 0.41 - p 0.56 - r 0.37
+2018-09-30 14:15:55,483:INFO: - new best score!
+2018-09-30 14:15:55,483:INFO: Epoch 4 out of 15
+2018-09-30 14:19:36,308:INFO: f1 0.44 - p 0.55 - r 0.40
+2018-09-30 14:19:36,812:INFO: - new best score!
+2018-09-30 14:19:36,813:INFO: Epoch 5 out of 15
+2018-09-30 14:23:17,897:INFO: f1 0.47 - p 0.54 - r 0.43
+2018-09-30 14:23:18,369:INFO: - new best score!
+2018-09-30 14:23:18,369:INFO: Epoch 6 out of 15
+2018-09-30 14:27:00,178:INFO: f1 0.47 - p 0.53 - r 0.44
+2018-09-30 14:27:00,684:INFO: - new best score!
+2018-09-30 14:27:00,684:INFO: Epoch 7 out of 15
+2018-09-30 14:30:42,601:INFO: f1 0.40 - p 0.54 - r 0.36
+2018-09-30 14:30:42,601:INFO: Epoch 8 out of 15
+2018-09-30 14:34:24,632:INFO: f1 0.46 - p 0.52 - r 0.43
+2018-09-30 14:34:24,632:INFO: Epoch 9 out of 15
+2018-09-30 14:38:06,290:INFO: f1 0.48 - p 0.51 - r 0.47
+2018-09-30 14:38:06,704:INFO: - new best score!
+2018-09-30 14:38:06,704:INFO: Epoch 10 out of 15
+2018-09-30 14:41:48,142:INFO: f1 0.44 - p 0.52 - r 0.40
+2018-09-30 14:41:48,142:INFO: Epoch 11 out of 15
+2018-09-30 14:45:30,143:INFO: f1 0.43 - p 0.53 - r 0.38
+2018-09-30 14:45:30,143:INFO: Epoch 12 out of 15
+2018-09-30 14:49:11,209:INFO: f1 0.45 - p 0.53 - r 0.41
+2018-09-30 14:49:11,210:INFO: - early stopping 3 epochs without improvement
+2018-10-01 00:58:22,238:INFO: WARNING: randomly initializing word vectors
+2018-10-01 00:58:24,716:WARNING: From /home/andrew/.conda/envs/my_python/lib/python3.6/site-packages/tensorflow/python/ops/rnn.py:430: calling reverse_sequence (from tensorflow.python.ops.array_ops) with seq_dim is deprecated and will be removed in a future version.
+Instructions for updating:
+seq_dim is deprecated, use seq_axis instead
+2018-10-01 00:58:24,717:WARNING: From /home/andrew/.conda/envs/my_python/lib/python3.6/site-packages/tensorflow/python/util/deprecation.py:454: calling reverse_sequence (from tensorflow.python.ops.array_ops) with batch_dim is deprecated and will be removed in a future version.
+Instructions for updating:
+batch_dim is deprecated, use batch_axis instead
+2018-10-01 00:58:27,196:INFO: Initializing tf session
+2018-10-01 00:58:27,529:INFO: Reloading the latest trained model...
+2018-10-01 00:58:27,530:INFO: Restoring parameters from /home/andrew/Desktop/EBM-NLP-HIER/acl_scripts/lstm-crf/results/test/participants/model.weights/
+2018-10-01 00:58:27,623:INFO: Testing model over test set
+2018-10-01 00:58:34,471:INFO: f1 0.65 - p 0.76 - r 0.58
+2018-10-02 21:10:48,490:INFO: WARNING: randomly initializing word vectors
+2018-10-02 21:10:51,189:WARNING: From /home/andrew/.conda/envs/my_python/lib/python3.6/site-packages/tensorflow/python/ops/rnn.py:430: calling reverse_sequence (from tensorflow.python.ops.array_ops) with seq_dim is deprecated and will be removed in a future version.
+Instructions for updating:
+seq_dim is deprecated, use seq_axis instead
+2018-10-02 21:10:51,190:WARNING: From /home/andrew/.conda/envs/my_python/lib/python3.6/site-packages/tensorflow/python/util/deprecation.py:454: calling reverse_sequence (from tensorflow.python.ops.array_ops) with batch_dim is deprecated and will be removed in a future version.
+Instructions for updating:
+batch_dim is deprecated, use batch_axis instead
+2018-10-02 21:10:54,135:INFO: Initializing tf session
+2018-10-02 21:10:54,582:INFO: Reloading the latest trained model...
+2018-10-02 21:10:54,595:INFO: Restoring parameters from /home/andrew/Desktop/EBM-NLP-HIER/acl_scripts/lstm-crf/results/test/participants/model.weights/
+2018-10-02 21:10:55,094:INFO: 
+This is an interactive mode.
+To exit, enter 'exit'.
+You can enter a sentence like
+input> I love Paris
+2018-10-02 21:11:39,759:INFO: A    double-blind clinical trial with zinc sulfate, 0.2  g    three times daily, and  a    placebo was  performed in   30   patients with biopsy-proven alcoholic liver cirrhosis. 
+2018-10-02 21:11:39,760:INFO: None None         None     None  None None None     None None None  None  None   None None None    None None      None None None     None None          None      None  None       
+2018-10-02 21:12:02,909:INFO: In   the  zinc-treated group of   16   patients, serum zinc rose from a    normal mean value of   13.3 to   17.4 mumol/l, whereas the  mean serum vitamin A    level remained practically unaltered within the  normal range, 1.89 at   the  entry and  1.83 mumol/l at   the  end  of   the  study. 
+2018-10-02 21:12:02,909:INFO: None None None         None  None None None      None  None None None None None   None None  None None None None None     None    None None None  None    None None  None     None        None      None   None None   None   None None None None  None None None    None None None None None None   
+2018-10-02 21:12:27,585:INFO: 16   female with cancer 
+2018-10-02 21:12:27,585:INFO: Size Sex    None None   
+2018-10-03 03:31:16,261:INFO: WARNING: randomly initializing word vectors
+2018-10-03 03:31:24,745:WARNING: From /home/andrew/.conda/envs/my_python/lib/python3.6/site-packages/tensorflow/python/ops/rnn.py:430: calling reverse_sequence (from tensorflow.python.ops.array_ops) with seq_dim is deprecated and will be removed in a future version.
+Instructions for updating:
+seq_dim is deprecated, use seq_axis instead
+2018-10-03 03:31:24,746:WARNING: From /home/andrew/.conda/envs/my_python/lib/python3.6/site-packages/tensorflow/python/util/deprecation.py:454: calling reverse_sequence (from tensorflow.python.ops.array_ops) with batch_dim is deprecated and will be removed in a future version.
+Instructions for updating:
+batch_dim is deprecated, use batch_axis instead
+2018-10-03 03:31:27,330:INFO: Initializing tf session
+2018-10-03 03:31:27,683:INFO: Reloading the latest trained model...
+2018-10-03 03:31:27,684:INFO: Restoring parameters from /home/andrew/Desktop/EBM-NLP-HIER/acl_scripts/lstm-crf/results/test/participants/model.weights/
+2018-10-03 03:31:27,776:INFO: Testing model over test set
+2018-10-03 03:31:43,343:INFO: f1 0.48 - p 0.51 - r 0.47
+2018-10-03 03:31:43,346:INFO: Testing model over test set
+2018-10-03 03:31:51,222:INFO: f1 0.65 - p 0.76 - r 0.58
+2018-10-06 22:36:32,178:INFO: WARNING: randomly initializing word vectors
+2018-10-06 22:36:44,025:WARNING: From /home/andrew/.conda/envs/my_python/lib/python3.6/site-packages/tensorflow/python/ops/rnn.py:430: calling reverse_sequence (from tensorflow.python.ops.array_ops) with seq_dim is deprecated and will be removed in a future version.
+Instructions for updating:
+seq_dim is deprecated, use seq_axis instead
+2018-10-06 22:36:44,026:WARNING: From /home/andrew/.conda/envs/my_python/lib/python3.6/site-packages/tensorflow/python/util/deprecation.py:454: calling reverse_sequence (from tensorflow.python.ops.array_ops) with batch_dim is deprecated and will be removed in a future version.
+Instructions for updating:
+batch_dim is deprecated, use batch_axis instead
+2018-10-06 22:36:46,612:INFO: Initializing tf session
+2018-10-06 22:36:47,210:INFO: Reloading the latest trained model...
+2018-10-06 22:36:47,224:INFO: Restoring parameters from /home/andrew/Desktop/PICO/hier_labels/acl_scripts/lstm-crf/results/test/participants/model.weights/
+2018-10-06 22:36:47,797:INFO: Testing model over test set
+2018-10-06 22:40:25,866:INFO: WARNING: randomly initializing word vectors
+2018-10-06 22:40:28,475:WARNING: From /home/andrew/.conda/envs/my_python/lib/python3.6/site-packages/tensorflow/python/ops/rnn.py:430: calling reverse_sequence (from tensorflow.python.ops.array_ops) with seq_dim is deprecated and will be removed in a future version.
+Instructions for updating:
+seq_dim is deprecated, use seq_axis instead
+2018-10-06 22:40:28,476:WARNING: From /home/andrew/.conda/envs/my_python/lib/python3.6/site-packages/tensorflow/python/util/deprecation.py:454: calling reverse_sequence (from tensorflow.python.ops.array_ops) with batch_dim is deprecated and will be removed in a future version.
+Instructions for updating:
+batch_dim is deprecated, use batch_axis instead
+2018-10-06 22:40:30,982:INFO: Initializing tf session
+2018-10-06 22:40:31,322:INFO: Reloading the latest trained model...
+2018-10-06 22:40:31,322:INFO: Restoring parameters from /home/andrew/Desktop/PICO/hier_labels/acl_scripts/lstm-crf/results/test/participants/model.weights/
+2018-10-06 22:40:31,418:INFO: Testing model over test set
+2018-10-06 22:40:42,766:INFO: f1 0.48 - p 0.51 - r 0.47
+2018-10-06 22:40:42,766:INFO: f1 0.48 - p 0.51 - r 0.47
+2018-10-06 22:40:42,767:INFO: Testing model over test set
+2018-10-06 22:40:42,767:INFO: Testing model over test set
+2018-10-06 22:40:48,176:INFO: f1 0.65 - p 0.76 - r 0.58
+2018-10-06 22:40:48,176:INFO: f1 0.65 - p 0.76 - r 0.58
+2018-10-06 22:40:48,176:INFO: f1 0.65 - p 0.76 - r 0.58
