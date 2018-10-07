@@ -181,18 +181,45 @@ def load_vocab(filename):
 
     Returns:
         d: dict[word] = index
+	idx: dict[idx] = word
 
     """
     try:
         d = dict()
+        #idx_to_word_dict = dict()
         with open(filename) as f:
             for idx, word in enumerate(f):
                 word = word.strip()
                 d[word] = idx
+         #       idx_to_word_dict[idx] = word
 
     except IOError:
         raise MyIOError(filename)
     return d
+
+def idx_word(filename):
+    """Loads vocab from a file
+
+    Args:
+        filename: (string) the format of the file must be one word per line.
+
+    Returns:
+
+	idx: dict[idx] = word
+
+    """
+    try:
+        #d = dict()
+        idx_to_word_dict = dict()
+        with open(filename) as f:
+            for idx, word in enumerate(f):
+                word = word.strip()
+                #d[word] = idx
+                idx_to_word_dict[idx] = word
+
+    except IOError:
+        raise MyIOError(filename)
+    return idx_to_word_dict# d
 
 
 def export_trimmed_glove_vectors(vocab, glove_filename, trimmed_filename, dim):
@@ -269,6 +296,7 @@ def get_processing_word(vocab_words=None, vocab_chars=None,
             if word in vocab_words:
                 word = vocab_words[word]
             else:
+                #print(word)
                 if allow_unk:
                     word = vocab_words[UNK]
                 else:

@@ -3,9 +3,10 @@ import os
 import tensorflow as tf
 
 
-from .data_utils import minibatches, pad_sequences, get_chunks, NONE
+from .data_utils import minibatches, pad_sequences, get_chunks, NONE, idx_word
 from .general_utils import Progbar
 from .base_model import BaseModel
+from model.config import Config
 
 
 class NERModel(BaseModel):
@@ -310,14 +311,42 @@ class NERModel(BaseModel):
             metrics: (dict) metrics["acc"] = 98.4, ...
 
         """
+
+
+        config = Config()
+        vocab_dict = idx_word(config.filename_words)
+        counter = 0
+        sentences, tags1 = [], []
+        for sent, tag in test:
+            sentences.append(sent)
+            tags1.append(tag)
+        print(sentences[counter])
+        the_tags = []
+        with open(config.filename_tags) as f:
+            for idx, tag in enumerate(f):
+                tag = tag.strip()
+                the_tags.append(tag)
+
         tags = self.idx_to_tag.values()
+        confusion_matrix = np.zeros((len(the_tags),len(the_tags)))
         stats = { tag: { 'n_correct': 0., 'n_pred': 0., 'n_true': 0. } for tag in tags }
 
         accs = []
         correct_preds, total_correct, total_preds = 0., 0., 0.
-        for words, labels in minibatches(test, self.config.batch_size):
-            labels_pred, sequence_lengths = self.predict_batch(words)
 
+        for words, labels in minibatches(test, 1):
+            print("---->",the_tags, len(the_tags))
+            # print(len(sentences), sentences[counter], tags[counter])
+
+
+            try:
+                print(sentences[counter], len(sentences[counter]))
+            except IndexError:
+                continue
+
+            #print("words, labels", words, labels, len(words))
+            labels_pred, sequence_lengths = self.predict_batch(words)
+            word_counter = 0
             for lab, lab_pred, length in zip(labels, labels_pred,
                                              sequence_lengths):
                 lab      = lab[:length]
@@ -325,8 +354,16 @@ class NERModel(BaseModel):
                 accs    += [a==b for (a, b) in zip(lab, lab_pred)]
 
                 for l_true, l_pred in zip(lab, lab_pred):
+
                   if l_true == l_pred:
+                    confusion_matrix[l_true,l_pred] += 1
+                    print(word_counter,l_true, l_pred,vocab_dict[sentences[counter][word_counter][-1]])
                     stats[self.idx_to_tag[l_true]]['n_correct'] += 1
+                  else:
+                     confusion_matrix[l_true,l_pred] += 1
+                     print(word_counter,l_true, l_pred, vocab_dict[sentences[counter][word_counter][-1]])
+                    #print(words, ' ', l_true, ' ', l_pred, '\n\n')
+                  word_counter += 1
                   stats[self.idx_to_tag[l_true]]['n_true'] += 1
                   stats[self.idx_to_tag[l_pred]]['n_pred'] += 1
 
@@ -337,7 +374,7 @@ class NERModel(BaseModel):
                 #correct_preds += len(lab_chunks & lab_pred_chunks)
                 #total_preds   += len(lab_pred_chunks)
                 #total_correct += len(lab_chunks)
-
+            counter += 1
         # Span stats
         p   = correct_preds / total_preds if correct_preds > 0 else 0
         r   = correct_preds / total_correct if correct_preds > 0 else 0
@@ -355,7 +392,8 @@ class NERModel(BaseModel):
           print ('%s: %s' %(tag, '  '.join(['%s=%.2f' %(metric, results[metric][tag]) for metric in results])))
 
         macro_results = { metric: np.mean(list(results[metric].values())) for metric in results }
-
+        print(counter)
+        print(confusion_matrix.astype(int))
         return macro_results
 
 

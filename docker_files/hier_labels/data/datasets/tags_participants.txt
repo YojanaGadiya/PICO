@@ -1,0 +1,5 @@
+Age
+None
+Condition
+Size
+Sex

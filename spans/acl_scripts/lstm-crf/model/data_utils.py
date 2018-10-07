@@ -194,6 +194,30 @@ def load_vocab(filename):
         raise MyIOError(filename)
     return d
 
+def idx_word(filename):
+    """Loads vocab from a file
+
+    Args:
+        filename: (string) the format of the file must be one word per line.
+
+    Returns:
+
+	idx: dict[idx] = word
+
+    """
+    try:
+        #d = dict()
+        idx_to_word_dict = dict()
+        with open(filename) as f:
+            for idx, word in enumerate(f):
+                word = word.strip()
+                #d[word] = idx
+                idx_to_word_dict[idx] = word
+
+    except IOError:
+        raise MyIOError(filename)
+    return idx_to_word_dict# d
+
 
 def export_trimmed_glove_vectors(vocab, glove_filename, trimmed_filename, dim):
     """Saves glove vectors in numpy array

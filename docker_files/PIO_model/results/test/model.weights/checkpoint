@@ -1,0 +1,2 @@
+model_checkpoint_path: "/home/andrew/Desktop/EBM-NLP/acl_scripts/lstm-crf/results/test/model.weights/"
+all_model_checkpoint_paths: "/home/andrew/Desktop/EBM-NLP/acl_scripts/lstm-crf/results/test/model.weights/"
