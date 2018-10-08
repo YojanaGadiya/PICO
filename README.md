@@ -1,4 +1,4 @@
-# PICO
+# PICO tagger
 
 The repository contains the code to train and evaluate an entity tagging system for the medical domain. The code has been downloaded and modified from https://github.com/bepnye/EBM-NLP and is the code discussed in https://arxiv.org/pdf/1806.04185.pdf .
 
