@@ -2,7 +2,7 @@
 
 The repository contains the code to train and evaluate an entity tagging system for the medical domain. The code has been downloaded and modified from https://github.com/bepnye/EBM-NLP and is the code discussed in https://arxiv.org/pdf/1806.04185.pdf .
 
-## Contents:
+## Contents
 
 * spans: the code to train and evaluate the system that tags entities as _participants_, _interventions_, _outcomes_, or _none_
 
@@ -22,10 +22,18 @@ The repository contains the code to train and evaluate an entity tagging system 
 
 The contents are the same as in _spans_, but each folder contains three additional directories (_participants_, _interventions_, _outcomes_) to store the files specific for each of the three systems.
 
+## Requirements
+
+* python3.X
+
+* tensorflow1.10.0
+
 
 ## Running the systems
 
 ### To run from scratch 
+
+* extract ebm_nlp_1_00.tar.gz
 
 ```
 make glove 
@@ -34,8 +42,12 @@ make glove
 make run
 ```
 
-### To run with the pre-built data in ../data/
 
+### To run with the pre-built data in ../data/
+```
+make glove 
+```
+*downloads Glove Vectors; only needs to be run once*
 ```
 python train(1).py <...|participants|interventions|outcomes> 
 ```
@@ -47,7 +59,7 @@ python train(1).py <...|participants|interventions|outcomes>
 python evaluate(1).py
 ```
 
-### To run the docker
+### To evaluate the pretrained models using the docker
 
 From the PICO directory, to build:
 
@@ -58,5 +70,7 @@ to run:
 ```
 sudo docker run <docker_name>
 ```
+
+
 
 
