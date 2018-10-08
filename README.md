@@ -1,6 +1,6 @@
 # PICO
 
-The repository contains the code to train and evaluate an entity tagging system for the medical domain. 
+The repository contains the code to train and evaluate an entity tagging system for the medical domain. The code has been downloaded and modified from https://github.com/bepnye/EBM-NLP and is the code discussed in https://arxiv.org/pdf/1806.04185.pdf .
 
 ## Contents:
 
@@ -16,7 +16,7 @@ The repository contains the code to train and evaluate an entity tagging system 
   
   * train.py: trains the model
   
-  * evaluates the model
+  * evaluate.py: evaluates the model
  
 * hier_labels: the code to train and evaluate three hierarchical label tagger for _participants_, _interventions_, _outcomes_
 
@@ -37,9 +37,15 @@ make run
 ### To run with the pre-built data in ../data/
 
 ```
-python train.py <...|participants|interventions|outcomes> 
+python train(1).py <...|participants|interventions|outcomes> 
 ```
-*use the arguments only for hieratchical labels*
+*use the arguments only for hieratchical labels; files ending in 1 are the options for running spans*
+
+### To evaluate 
+
+``` 
+python evaluate(1).py
+```
 
 ### To run the docker
 
@@ -52,3 +58,5 @@ to run:
 ```
 sudo docker run <docker_name>
 ```
+
+
