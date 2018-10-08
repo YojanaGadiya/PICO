@@ -1,7 +1,7 @@
-from model.data_utils import CoNLLDataset
-from model.ner_model import NERModel
+from model.data_utils1 import CoNLLDataset
+from model.ner_model1 import NERModel
 from model.base_model import BaseModel
-from model.config import Config
+from model.config1 import Config
 
 
 def main():

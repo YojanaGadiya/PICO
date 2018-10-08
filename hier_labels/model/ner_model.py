@@ -391,7 +391,7 @@ class NERModel(BaseModel):
 
         macro_results = { metric: np.mean(list(results[metric].values())) for metric in results }
       #  print(counter)
-        print("Confusion matrix:", "\n", "rows: true labels (same order as in the scores above)", "\n",  "columns: predicted labels (same order as in the scores above)")
+        print("Confusion matrix:", "\n", "rows: true labels (the order is the same as in /data/<participants|interventions|outcomes>/tags.txt)", "\n",  "columns: predicted labels (the order is the same as in /data/<participants|interventions|outcomes>/tags.txt)")
         print(confusion_matrix.astype(int))
         return macro_results
 
