@@ -22,6 +22,34 @@ The repository contains the code to train and evaluate an entity tagging system 
 
 The contents are the same as in _spans_, but each folder contains three additional directories (_participants_, _interventions_, _outcomes_) to store the files specific for each of the three systems.
 
+* the hierarchical labels (from https://github.com/bepnye/EBM-NLP)
+
+      participants/
+        0: No label
+        1: Age
+        2: Sex
+        3: Sample size
+        4: Condition
+
+      interventions/
+        0: No label
+        1: Surgical
+        2: Physical
+        3: Pharmacological
+        4: Educational
+        5: Psychological
+        6: Other
+        7: Control
+
+      outcomes/
+        0: No label
+        1: Physical
+        2: Pain
+        3: Mortality
+        4: Adverse effects
+        5: Mental
+        6: Other
+
 ## Requirements
 
 * python3.X
