@@ -87,8 +87,8 @@ def main():
     print("Evaluating the system for hierarchical labels (" + sys.argv[1] + ")")
     print("Testing on dev set")
     model.evaluate(dev)
-    print("Testing on test set")
-    model.evaluate(test)
+   # print("Testing on test set")
+   # model.evaluate(test)
     #interactive_shell(model)
 
 

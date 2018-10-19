@@ -357,11 +357,11 @@ class NERModel(BaseModel):
 
                   if l_true == l_pred:
                     confusion_matrix[l_true,l_pred] += 1
-                   # print(word_counter,l_true, l_pred,vocab_dict[sentences[counter][word_counter][-1]])
+                    print(word_counter,l_true, l_pred,vocab_dict[sentences[counter][word_counter][-1]])
                     stats[self.idx_to_tag[l_true]]['n_correct'] += 1
                   else:
                      confusion_matrix[l_true,l_pred] += 1
-                    # print(word_counter,l_true, l_pred, vocab_dict[sentences[counter][word_counter][-1]])
+                     print(l_true, l_pred, vocab_dict[sentences[counter][word_counter][-1]])
                     #print(words, ' ', l_true, ' ', l_pred, '\n\n')
                   word_counter += 1
                   stats[self.idx_to_tag[l_true]]['n_true'] += 1

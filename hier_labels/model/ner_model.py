@@ -345,6 +345,7 @@ class NERModel(BaseModel):
             #print("words, labels", words, labels, len(words))
             labels_pred, sequence_lengths = self.predict_batch(words)
             word_counter = 0
+            wrong_counter = 0
             for lab, lab_pred, length in zip(labels, labels_pred,
                                              sequence_lengths):
                 lab      = lab[:length]
@@ -355,11 +356,12 @@ class NERModel(BaseModel):
 
                   if l_true == l_pred:
                     confusion_matrix[l_true,l_pred] += 1
-                   # print(word_counter,l_true, l_pred,vocab_dict[sentences[counter][word_counter][-1]])
+                    #print(l_true, l_pred,vocab_dict[sentences[counter][word_counter][-1]])
                     stats[self.idx_to_tag[l_true]]['n_correct'] += 1
                   else:
+                     wrong_counter += 1
                      confusion_matrix[l_true,l_pred] += 1
-                    # print(word_counter,l_true, l_pred, vocab_dict[sentences[counter][word_counter][-1]])
+                     print(l_true, l_pred, vocab_dict[sentences[counter][word_counter][-1]])
                     #print(words, ' ', l_true, ' ', l_pred, '\n\n')
                   word_counter += 1
                   stats[self.idx_to_tag[l_true]]['n_true'] += 1
@@ -393,6 +395,7 @@ class NERModel(BaseModel):
       #  print(counter)
         print("Confusion matrix:", "\n", "rows: true labels (the order is the same as in /data/<participants|interventions|outcomes>/tags.txt)", "\n",  "columns: predicted labels (the order is the same as in /data/<participants|interventions|outcomes>/tags.txt)")
         print(confusion_matrix.astype(int))
+
         return macro_results
 
 

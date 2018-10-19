@@ -95,3 +95,33 @@ batch_dim is deprecated, use batch_axis instead
 2018-10-03 03:44:19,907:INFO: f1 0.44 - p 0.48 - r 0.42
 2018-10-03 03:44:19,907:INFO: Testing model over test set
 2018-10-03 03:44:25,092:INFO: f1 0.64 - p 0.68 - r 0.62
+2018-10-07 22:14:01,737:INFO: WARNING: randomly initializing word vectors
+2018-10-07 22:14:04,339:WARNING: From /home/andrew/.conda/envs/my_python/lib/python3.6/site-packages/tensorflow/python/ops/rnn.py:430: calling reverse_sequence (from tensorflow.python.ops.array_ops) with seq_dim is deprecated and will be removed in a future version.
+Instructions for updating:
+seq_dim is deprecated, use seq_axis instead
+2018-10-07 22:14:04,339:WARNING: From /home/andrew/.conda/envs/my_python/lib/python3.6/site-packages/tensorflow/python/util/deprecation.py:454: calling reverse_sequence (from tensorflow.python.ops.array_ops) with batch_dim is deprecated and will be removed in a future version.
+Instructions for updating:
+batch_dim is deprecated, use batch_axis instead
+2018-10-07 22:14:06,855:INFO: Initializing tf session
+2018-10-07 22:14:07,166:INFO: Reloading the latest trained model...
+2018-10-07 22:14:07,167:INFO: Restoring parameters from /home/andrew/Desktop/PICO/hier_labels/results/test/interventions/model.weights/
+2018-10-07 22:15:20,628:INFO: WARNING: randomly initializing word vectors
+2018-10-07 22:15:23,182:WARNING: From /home/andrew/.conda/envs/my_python/lib/python3.6/site-packages/tensorflow/python/ops/rnn.py:430: calling reverse_sequence (from tensorflow.python.ops.array_ops) with seq_dim is deprecated and will be removed in a future version.
+Instructions for updating:
+seq_dim is deprecated, use seq_axis instead
+2018-10-07 22:15:23,183:WARNING: From /home/andrew/.conda/envs/my_python/lib/python3.6/site-packages/tensorflow/python/util/deprecation.py:454: calling reverse_sequence (from tensorflow.python.ops.array_ops) with batch_dim is deprecated and will be removed in a future version.
+Instructions for updating:
+batch_dim is deprecated, use batch_axis instead
+2018-10-07 22:15:25,814:INFO: Initializing tf session
+2018-10-07 22:15:26,144:INFO: Reloading the latest trained model...
+2018-10-07 22:15:26,145:INFO: Restoring parameters from /home/andrew/Desktop/PICO/hier_labels/results/test/interventions/model.weights/
+2018-10-07 22:16:08,080:INFO: WARNING: randomly initializing word vectors
+2018-10-07 22:16:10,813:WARNING: From /home/andrew/.conda/envs/my_python/lib/python3.6/site-packages/tensorflow/python/ops/rnn.py:430: calling reverse_sequence (from tensorflow.python.ops.array_ops) with seq_dim is deprecated and will be removed in a future version.
+Instructions for updating:
+seq_dim is deprecated, use seq_axis instead
+2018-10-07 22:16:10,814:WARNING: From /home/andrew/.conda/envs/my_python/lib/python3.6/site-packages/tensorflow/python/util/deprecation.py:454: calling reverse_sequence (from tensorflow.python.ops.array_ops) with batch_dim is deprecated and will be removed in a future version.
+Instructions for updating:
+batch_dim is deprecated, use batch_axis instead
+2018-10-07 22:16:13,533:INFO: Initializing tf session
+2018-10-07 22:16:13,869:INFO: Reloading the latest trained model...
+2018-10-07 22:16:13,870:INFO: Restoring parameters from /home/andrew/Desktop/PICO/hier_labels/results/test/interventions/model.weights/
