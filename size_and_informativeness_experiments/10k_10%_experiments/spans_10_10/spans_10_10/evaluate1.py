@@ -85,8 +85,8 @@ def main():
     print("Evaluating the model for PIO spans")
     print("Testing model over dev set")
     model.evaluate(dev)
-    #print("Testing model over test set")
-    #model.evaluate(test)
+    print("Testing model over test set")
+    model.evaluate(test)
     #interactive_shell(model)
 
 

@@ -491,3 +491,9 @@ batch_dim is deprecated, use batch_axis instead
 2018-11-25 17:08:39,820:INFO: Initializing tf session
 2018-11-25 17:08:40,124:INFO: Reloading the latest trained model...
 2018-11-25 17:08:40,125:INFO: Restoring parameters from ./results/test/model.weights/
+2018-11-25 23:48:31,347:INFO: WARNING: randomly initializing word vectors
+2018-11-25 23:48:34,613:INFO: Initializing tf session
+2018-11-25 23:48:34,893:INFO: Reloading the latest trained model...
+2018-11-25 23:49:50,531:INFO: WARNING: randomly initializing word vectors
+2018-11-25 23:49:53,471:INFO: Initializing tf session
+2018-11-25 23:49:53,744:INFO: Reloading the latest trained model...
