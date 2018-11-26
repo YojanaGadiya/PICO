@@ -117,3 +117,7 @@ batch_dim is deprecated, use batch_axis instead
 2018-10-06 23:05:20,114:INFO: Testing model over test set
 2018-10-06 23:05:53,169:INFO: f1 0.69 - p 0.66 - r 0.73
 2018-10-06 23:05:53,169:INFO: f1 0.69 - p 0.66 - r 0.73
+2018-11-25 21:40:51,042:INFO: WARNING: randomly initializing word vectors
+2018-11-25 21:40:54,293:INFO: Initializing tf session
+2018-11-25 21:40:54,631:INFO: Reloading the latest trained model...
+2018-11-25 21:40:54,632:INFO: Restoring parameters from ./results/test/model.weights/
