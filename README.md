@@ -1,3 +1,32 @@
+# Running instructions for assignment 4
+
+There are 6 experiments that can be run (the links are to the folders containing the relevant docker file):
+
+## Experiments with labels not manually curated
+
+* span labeling, k=10, % = 10 (best out of (relatively) small dataset models, dataset labeled using three-fold training (repo here ./size_and_informativeness_experiments/support_scripts_and_training/training_model_adjusted_for_three_folds):
+
+   https://github.com/maxaalexeeva/PICO/tree/master/size_and_informativeness_experiments/10k_10%25_experiments/spans_10_10
+
+* second iteration with the training data relabeled using this script ./size_and_informativeness_experiments/relabeling_conll.ipynb:
+
+   https://github.com/maxaalexeeva/PICO/tree/master/size_and_informativeness_experiments/10k_10%25_experiments/spans_10_10_relabeled_data1
+   
+* training using original labels provided by Nye et al:
+   https://github.com/maxaalexeeva/PICO/tree/master/size_and_informativeness_experiments/10k_10%25_experiments/spans_10_10_with_orig_labels
+
+
+## Experiments with labels manually curated (200 sentences)
+  
+* training using 200 sentences with the labels obtained from multifold training (best results from using the small dataset):
+  https://github.com/maxaalexeeva/PICO/tree/master/size_and_informativeness_experiments/200_sentence_experiments/spans_uncurated
+  
+* training done using 200 manually labeled examples:
+  https://github.com/maxaalexeeva/PICO/tree/master/size_and_informativeness_experiments/200_sentence_experiments/spans_curated
+
+* (no real need to run, results are close to 0) automatically relabeled using the relabeling script from ./size_and_informativeness_experiments/relabeling_conll.ipynb:
+  https://github.com/maxaalexeeva/PICO/tree/master/size_and_informativeness_experiments/200_sentence_experiments/spans_automatically_relabeled
+
 # PICO tagger
 
 The repository contains the code to train and evaluate an entity tagging system for the medical domain. The code has been downloaded and modified from https://github.com/bepnye/EBM-NLP; the code is discussed in https://arxiv.org/pdf/1806.04185.pdf .
